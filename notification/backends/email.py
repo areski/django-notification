@@ -44,5 +44,5 @@ class EmailBackend(backends.BaseBackend):
         notification.Notice.objects.create(recipient=recipient,
                                            notice_type=notice_type,
                                            sender=sender,
-                                           message=messages,
+                                           message=ugettext(notice_type.display),
                                            on_site=True)
