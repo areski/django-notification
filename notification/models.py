@@ -235,7 +235,7 @@ def send_now(users, label, extra_context=None, sender=None):
     notification.send(user, "friends_invite_sent", {
         "spam": "eggs",
         "foo": "bar",
-    )
+    })
     """
     sent = False
     if extra_context is None:
